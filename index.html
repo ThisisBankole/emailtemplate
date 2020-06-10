@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style type="text/css">
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300;1,400&display=swap');
 
@@ -9,42 +11,82 @@ body {
     padding: 0px;
     margin: 0px;
     border: 0px;
-    max-width: 800px;
     font-family: 'Source Sans Pro', sans-serif;
     box-sizing: border-box;
     background-color: #e8ecf1;
+   
 }
 #wrapper {
-    width: 652px;
+    width: 1000px;
     height: 1800px;
     background-color: #fff;
-    position: absolute;
-    top: 0%;
-    left: 30%;
+    margin: 0 auto;
+    
+}
+
+
+@media (max-width: 1083px) {
+    #wrapper {
+        width: 1000px; 
+        margin: 0 auto;
+
+    }
 }
 
 #logowrapper {
     position: absolute;
     top: 30px;
-    left: 30px;
+    left: 400px;
 
 }
+
+@media (max-width: 1083px) {
+    #logowrapper {
+        position: absolute;
+        top: 60px;
+        left: 70px;
+    }
+}
+
 
 .centerbanner {
     position: absolute;
     top: 120px;
-    left: 150px;
+    left: 700px;
 }
+@media (max-width: 1083px) {
+    .centerbanner {
+    position: absolute;
+    top: 120px;
+    left: 350px;
+}
+}
+
 
 .wel {
     position: absolute;
     top: 390px;
-    left: 240px;
+    left: 770px;
     font-size: 16px;
     color: #121212;
     text-decoration: none solid rgb(18, 18, 18);
     font-weight: 700;
 }
+@media (max-width: 1083px) {
+    .wel {
+    position: absolute;
+    top: 390px;
+    left: 440px;
+}
+}
+
+@media (max-width: 600px) {
+    .wel {
+        white-space: nowrap;;
+    }
+
+}
+
 hr{
     background-color: #8934ad;
     width: 281px;
@@ -53,7 +95,20 @@ hr{
     stroke-width: 1;
     position: absolute;
     top: 435px;
-    left: 165px;
+    left: 690px;
+}
+
+@media (max-width: 1083px) {
+    hr {
+        background-color: #8934ad;
+        width: 281px;
+        height: 1px;
+        opacity: 0.5;
+        stroke-width: 1;
+        position: absolute;
+        top: 435px;
+        left: 370px;  
+    }
 }
 
 .firstcol {
@@ -65,9 +120,23 @@ hr{
     text-decoration: none solid rgb(18, 18, 18);
     position: absolute;
     top: 480px;
-    left: 55px;
+    left: 550px;
 }
 
+@media (max-width: 1083px) {
+    .firstcol {
+    width: 577px;
+    height: 367px;
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    color: #121212;
+    text-decoration: none solid rgb(18, 18, 18);
+    position: absolute;
+    top: 480px;
+    left: 190px;
+}
+
+}
 .second-line{
     background-color: #8934ad;
     width: 281px;
@@ -76,7 +145,20 @@ hr{
     stroke-width: 1;
     position: absolute;
     top: 923px;
-    left: 165px;
+    left: 690px;
+}
+
+@media (max-width: 1083px) {
+    .second-line {
+        background-color: #8934ad;
+        width: 281px;
+        height: 1px;
+        opacity: 0.5;
+        stroke-width: 1;
+        position: absolute;
+        top: 923px;
+        left: 380px;  
+    }
 }
 
 span {
@@ -88,7 +170,7 @@ span {
     list-style: none;
     position: relative;
     top: 950px;
-    left: 25px;
+    left: 207px;
     
 }
 
@@ -112,7 +194,17 @@ span {
 .bottom-banner {
     position: relative;
     top: 950px;
-    left: 59px;
+    left: 215px;
+}
+
+@media (max-width: 1083px) {
+    .bottom-banner {
+    position: relative;
+    top: 950px;
+    left: 230px;
+}
+
+
 }
 
 .lower-text {
@@ -124,15 +216,23 @@ span {
     text-decoration: none solid rgb(18, 18, 18);
     position: absolute;
     top: 1150px;
-    left: 55px;
+    left: 550px;
     text-align: center;
+}
+
+@media (max-width: 1083px) {
+    .lower-text {
+    top: 1150px;
+    left: 230px;
+    text-align: center; 
+    }
 }
 
 .callout {
     list-style: none;
     position: relative;
     top: 1050px;
-    left: 210px;
+    left: 360px;
     
 }
 
@@ -144,7 +244,7 @@ span {
 .footer {
     position: relative;
     top: 1150px;
-    left: 29px;
+    left: 200px;
     width: 597px;
     height: 135px;
     font-family: Source Sans Pro;
@@ -155,10 +255,14 @@ span {
 
 }
 
+
+
 </style>
 </head>
 <body>
   <div id="wrapper">
+
+     
       <header>
           <div id="logowrapper"> 
                 <img class="logo" src="https://res.cloudinary.com/dvxeblbzz/image/upload/v1591791603/Polaris_Bank_Logo_1_1_izoim4.svg" alt="logo">
