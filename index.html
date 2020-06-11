@@ -27,7 +27,9 @@ body {
 
 @media (max-width:390px) {
     body {
+        box-sizing: unset;
         width: 420px;
+        
 
     }
 }
@@ -72,7 +74,7 @@ header {
 @media (max-width: 420px) {
    header {
     position: relative;
-    left: 4.8em;
+    left: 3em;
    }
     
 }
@@ -94,9 +96,30 @@ header {
 .centerbanner {
     width: 300px;
     height: 250px;
-    margin-bottom: 1300px;
+    margin-bottom: 1250px;
+    position: relative;
+    left: 3em;
+}
+
+@media (max-width: 390px) {
+   .centerbanner {
+    width: 280px;
+    font-size: 14px;
+    position: relative;
+    left: 5.3em;
+   }
     
 }
+@media (max-width: 330px) {
+   .centerbanner {
+    width: 280px;
+    font-size: 13px;
+    position: relative;
+    left: 6em;
+   }
+    
+}
+
 
 .wel-cont {
     height: 100%;
@@ -112,9 +135,29 @@ header {
     color: #121212;
     text-decoration: none solid rgb(18, 18, 18);
     font-weight: 700;
-    margin-bottom: 4530px;
+    margin-bottom: 4730px;
+    position: relative;
 }
 
+@media (max-width: 390px) {
+   .wel {
+    width: 280px;
+    font-size: 14px;
+    position: relative;
+    left: 6em;
+   }
+    
+}
+
+@media (max-width: 330px) {
+   .wel {
+    width: 280px;
+    font-size: 13px;
+    position: relative;
+    left: 6.5em;
+   }
+    
+}
 .first-line-cont {
     height: 100%;
     display: flex;
@@ -128,9 +171,29 @@ hr{
     height: 1px;
     opacity: 0.5;
     stroke-width: 1;
-    margin-bottom: 8120px;
+    margin-bottom: 8320px;
     margin-right: 30px;
 
+}
+
+@media (max-width: 390px) {
+   hr {
+    width: 280px;
+    font-size: 12px;
+    position: relative;
+    left: 2.2em;
+   }
+    
+}
+
+@media (max-width: 330px) {
+   hr {
+    width: 280px;
+    font-size: 12px;
+    position: relative;
+    left: 1.7em;
+   }
+    
 }
 
 .firstcol-cont {
@@ -143,9 +206,9 @@ hr{
 .firstcol {
     width: 500px;
     height: 367px;
-    margin-bottom: 11200px;
+    margin-bottom: 11450px;
     font-family: Source Sans Pro;
-    font-size: 14px;
+    font-size: 16px;
     color: #121212;
     text-decoration: none solid rgb(18, 18, 18);
     text-align: justify;
@@ -155,9 +218,9 @@ hr{
 @media (max-width: 550px) {
    .firstcol {
     width: 350px;
-    font-size: 11px;
+    font-size: 14px;
     position: relative;
-    right: 3em;
+    right: 2em;
    }
     
 }
@@ -165,7 +228,7 @@ hr{
 @media (max-width: 390px) {
    .firstcol {
     width: 250px;
-    font-size: 11px;
+    font-size: 14px;
     position: relative;
     left: 0.2em;
    }
@@ -176,9 +239,9 @@ hr{
 @media (max-width: 330px) {
    .firstcol {
     width: 280px;
-    font-size: 11px;
+    font-size: 13px;
     position: relative;
-    left: -1em;
+    left: 0.5em;
    }
     
 }
@@ -196,7 +259,7 @@ hr{
     height: 1px;
     opacity: 0.5;
     stroke-width: 1;
-    margin-bottom: 14300px;
+    margin-bottom: 14400px;
     margin-right: 200px;
     
 
@@ -215,14 +278,18 @@ hr{
    .second-line {
     width: 281px;
     position: relative;
-    left: 6em;
+    top: 2.5em;
+    left: 9em;
    }
     
 }
 
-@media (max-width: 320px) {
+@media (max-width: 330px) {
     .second-line {
-        width: 281px;
+        position: relative;
+        top: -2em;
+        left: 10em;
+
     }
 }
 
@@ -266,12 +333,18 @@ span {
 @media (max-width: 390px) {
    .button-app {
     position: relative;
-    right: 2em;
+    bottom: 3em;
+    left: 0em;
    }
     
 }
 
-
+@media (max-width: 320px) {
+    .button-app {
+        position: relative;
+        top: -5em;
+    }
+}
 
 .button-app .but{
     display: inline-block;
@@ -334,7 +407,7 @@ span {
     .bottom-banner {
         position: relative;
         bottom: 0.1em;
-        left: 1.7em;
+        left: 2.8em;
 
     }
 }
@@ -373,6 +446,20 @@ span {
     
 }
 
+@media (max-width: 330px) {
+    .callout {
+        position: relative;
+        left: 0.8em;
+    }
+}
+
+@media (max-width: 380px) {
+    .callout {
+        position: relative;
+        left: 0.8em;
+    }
+}
+
 .callout .social{
     display: inline-block;
     padding: 0px 20px;
@@ -398,6 +485,8 @@ span {
 
 }
 
+
+
 @media (max-width: 550px) {
    .footer {
     width: 300px;
@@ -406,6 +495,9 @@ span {
    }
     
 }
+
+
+
 
 
 
@@ -419,14 +511,14 @@ span {
   <div id="wrapper">
 
                 <header>
-                     <img class="logo" src="https://res.cloudinary.com/dvxeblbzz/image/upload/v1591791603/Polaris_Bank_Logo_1_1_izoim4.svg" alt="logo" width="50px" height="50px">
+                     <img class="logo" src="https://res.cloudinary.com/dvxeblbzz/image/upload/v1591791603/Polaris_Bank_Logo_1_1_izoim4.svg" alt="logo" width="30px" height="30px">
                 </header>
                                
           
           
     <div class="centerbanner-cont">
             <div class="centerbanner">
-                    <img src="https://res.cloudinary.com/dvxeblbzz/image/upload/v1591791613/topimg_fgyq6l.jpeg" alt="" width="300px" height="250px">
+                    <img src="https://res.cloudinary.com/dvxeblbzz/image/upload/v1591791613/topimg_fgyq6l.jpg" alt="" width="139px" height="116px">
                 </div>
     </div>
     <div class="wel-cont">
@@ -456,7 +548,7 @@ span {
                                     Put some money in your account. <br> <br> 
                                 </li>
                                 <li>
-                                    To pay in, you can add a debit card on the app, transfer money to your account <br> another bank app (or with internet banking, USSD) or deposit cash into your account at any of our branches.
+                                    To pay in, you can add a debit card on the app, transfer money to your account from another bank app (or with internet banking, USSD) or deposit cash into your account at any of our branches.
                                 </li> <br> <br> 
                             </ul>
                             
